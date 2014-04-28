@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="toggle"
+            android:id="@+id/toggle"
+            android:checked="false"
+            android:textOn="ON"
+            android:textOff="OFF"
+            android:onClick="onExecute"
+            android:layout_alignTop="@+id/menuSensor"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/menuSensor" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/menuSensor"
+            android:layout_toRightOf="@+id/toggle"
+            android:spinnerStyle="@android:style/Widget.Spinner.DropDown" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/menuSensor"  >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView"
+            android:layout_gravity="center"
+            android:layout_above="@+id/textView" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView"
+            android:gravity="center"/>
+
+    </RelativeLayout >
+
+
+</RelativeLayout>
